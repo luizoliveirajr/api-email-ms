@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Email de Notificação</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { padding: 20px; background-color: #f4f4f4; border-radius: 5px; }
+        .content { background-color: #fff; padding: 15px; border-radius: 5px; }
+        .footer { margin-top: 20px; font-size: 12px; color: #888; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Olá, <span th:text="${nome}"></span>!</h2>
+    <div class="content">
+        <p th:text="${mensagem}"></p>
+    </div>
+    <p class="footer">Este é um e-mail automático. Por favor, não responda.</p>
+</div>
+</body>
+</html>
